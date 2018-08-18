@@ -3,8 +3,7 @@ function addElementToBeginningOfArray(array, element){
   return [element, ...array]
 }
 function destructivelyAddElementToBeginningOfArray(array, element){
-  array[0] = element
-  return array
+  return array.unshift(element)
 }
 function accessElementInArray(array, index){
   return array[index]
